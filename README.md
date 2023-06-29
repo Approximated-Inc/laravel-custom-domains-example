@@ -31,10 +31,10 @@ This assumes that you have NPM installed, and the usual things for a laravel ins
 7. After account creation you'll be logged in to a dashboard with a form. 
 8. In the custom domain field, enter the domain of your dev env (localhost, for instance) and click save.
 9. To test the custom domain in a local environment: 
-  1. Change the APP_PRIMARY_DOMAIN in .env to anything else temporarily, then reload the page.
-  2. This makes the router not match that as the primary domain, so it'll attempt it as a custom domain.
-  3. You should see a public profile for that user with a few example pages (it's pretty basic, just an example)
-  4. To get back to the main app dashboard again, just change the APP_PRIMARY_DOMAIN back.
+  - Change the APP_PRIMARY_DOMAIN in .env to anything else temporarily, then reload the page.
+  - This makes the router not match that as the primary domain, so it'll attempt it as a custom domain.
+  - You should see a public profile for that user with a few example pages (it's pretty basic, just an example)
+  - To get back to the main app dashboard again, just change the APP_PRIMARY_DOMAIN back.
 
 ## Files to check out
 - `/routes/web.php` (for the route groups)
