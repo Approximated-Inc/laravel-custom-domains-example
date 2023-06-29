@@ -1,0 +1,16 @@
+tasks:
+  - name: Vite
+    command: |
+      npm run dev
+  - name: Artisan Serve
+    command: |
+      php artisan serve --port=8080
+
+ports:
+  - port: 8080
+    onOpen: open-browser
+    visibility: public
+  - port: 5173
+    onOpen: ignore
+    visibility: public
+    

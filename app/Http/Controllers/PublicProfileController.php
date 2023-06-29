@@ -11,4 +11,11 @@ class PublicProfileController extends Controller
             'user' => $request->user,
         ]);
     }
+
+    public function page(Request $request, $page){
+        return view('public_profile.page', [
+            'user' => $request->user,
+            'page' => $page,
+        ]);
+    }
 }

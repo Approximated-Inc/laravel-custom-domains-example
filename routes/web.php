@@ -38,6 +38,7 @@ Route::domain(env('APP_PRIMARY_DOMAIN'))->group(function () {
 // see the CustomDomains middleware for details on how it matches to custom domains.
 Route::middleware('custom_domains')->group(function () {
     Route::get('/', [PublicProfileController::class, 'show'])->name('public_profile.show');
+    Route::get('/page/{page}', [PublicProfileController::class, 'page'])->name('public_profile.page');
 });
 
 
