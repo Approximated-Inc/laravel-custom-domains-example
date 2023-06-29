@@ -1,5 +1,5 @@
 # Laravel Custom Domains Example
-This is an example repo to help you understand how you could implement custom domains easily as a feature in your Laravel app using (Approximated)[https://approximated.app].
+This is an example repo to help you understand how you could implement custom domains easily as a feature in your Laravel app using [Approximated](https://approximated.app).
 
 ## How it works
 The example app is just a basic fresh Laravel app, with the Breeze auth starter added. 
