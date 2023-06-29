@@ -37,12 +37,12 @@ This assumes that you have NPM installed, and the usual things for a laravel ins
   - To get back to the main app dashboard again, just change the APP_PRIMARY_DOMAIN back.
 
 ## Files to check out
-- `/routes/web.php` (for the route groups)
-- `/app/Http/Middleware/CustomDomains.php` (to see how custom domains are matched to users)
-- `/app/Http/Kernel.php` (aliased the middleware here)
-- `/app/Http/Controllers/PublicProfileController.php` (loads up a public profile for this example)
-- `resources/views/public_profile/show.blade.php` (view that extends up separate layout from default)
-- `resources/views/layouts/public_profile_layout.blade.php` (a separate layout for custom domains)
+- (routes/web.php)[routes/web.php] (for the route groups)
+- (app/Http/Middleware/CustomDomains.php)[app/Http/Middleware/CustomDomains.php] (to see how custom domains are matched to users)
+- (app/Http/Kernel.php)[app/Http/Kernel.php] (aliased the middleware here)
+- (app/Http/Controllers/PublicProfileController.php)[app/Http/Controllers/PublicProfileController.php] (loads up a public profile for this example)
+- (resources/views/public_profile/show.blade.php)[resources/views/public_profile/show.blade.php] (view that extends up separate layout from default)
+- (resources/views/layouts/public_profile_layout.blade.php)[resources/views/layouts/public_profile_layout.blade.php] (a separate layout for custom domains)
 
 ## Assets and CORS
 These work out of the box and required no changes in this example app, because they're all relatively pathed in the rendered html.
