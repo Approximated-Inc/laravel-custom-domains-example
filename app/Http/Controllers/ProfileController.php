@@ -43,9 +43,12 @@ class ProfileController extends Controller
 
         $apx = new Approximated;
 
+        // These nested ifs below are gross but easier to understand for the example
+        
         // did the custom domain field change?
         if($request->filled('custom_domain')){
-            // was their a current domain to update in our DB?
+            // was there a current domain to update in our DB? 
+            // If yes, we want to update on Approximated, not create.
             if ($current_domain) {
                 // double check the vhost exists on Approximated
                 $vhost_check = $apx->get_vhost($current_domain);
