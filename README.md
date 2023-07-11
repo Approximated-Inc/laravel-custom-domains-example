@@ -40,6 +40,7 @@ This assumes that you have NPM installed, and the usual things for a laravel ins
 - [routes/web.php](routes/web.php) - for the route groups
 - [app/Http/Middleware/CustomDomains.php](app/Http/Middleware/CustomDomains.php) - to see how custom domains are matched to users
 - [app/Http/Kernel.php](app/Http/Kernel.php) - aliased the middleware here
+- [app/Http/Controllers/ProfileController.php](app/Http/Controllers/ProfileController.php) - the default laravel breeze profile controller, modified to create/update/delete the custom domain on update.
 - [app/Http/Controllers/PublicProfileController.php](app/Http/Controllers/PublicProfileController.php) - loads up a public profile for this example
 - [resources/views/public_profile/show.blade.php](resources/views/public_profile/show.blade.php) - view that extends up separate layout from default
 - [resources/views/layouts/public_profile_layout.blade.php](resources/views/layouts/public_profile_layout.blade.php) - a separate layout for custom domains
