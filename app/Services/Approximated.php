@@ -102,14 +102,11 @@ class Approximated {
     }
     
     /**
-     * Create a virtual host.
+     * Gets a virtual host.
      *
      * @param datatype $incoming_address The incoming address.
-     * @param datatype $target_address The target address.
-     * @param array $opts Optional fields. See https://approximated.app/docs/#create-virtual-host for more details.
      * @return array 
      * [
-     *     "success" => true,
      *     "data" => [
      *          "apx_hit" => true, // requests are reaching the cluster
      *          "created_at" => "2023-04-03T17:59:28", // UTC timezone
@@ -127,11 +124,6 @@ class Approximated {
      *          "target_address" => "myapp.com",
      *          "target_ports" => "443"
      *     ]
-     * ]
-     * @return array  
-     * [
-     *     "success" => false,
-     *     "data" => "Not Found.",
      * ]
      */
     public function get_vhost($incoming_address) 
